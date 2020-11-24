@@ -6,19 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="styles.css">
       <!-- Font Awesome -->
-      <link
-         href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet"
-         />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
       <!-- Google Fonts -->
-      <link
-         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-         rel="stylesheet"
-         />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
       <!-- Bootstrap core CSS -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
       <!-- Material Design Bootstrap -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -62,12 +56,11 @@
          <br>
          <!-- Encabezado -->
          <div class="container pt-4">
-            <div class="col-4">
+            <div class="row"></div>
+            <div class="col-md-4 col-sm">
                <h1><strong>Servicio Técnico <br>&<br>Programación</strong></h1>
                <div class="py-4 text-white"><h5><strong>"Siempre haciendo de lo <br>dicífil algo mucho más fácil."</strong></h5></div>
             </div>
-            <div class="col-6"></div>
-            <div class="col-6"></div>
          </div>
          <!-- Fin de encabezado -->
       </header>
@@ -77,34 +70,38 @@
          <br>
          <br>
          <!-- Sección "Que hacemos" -->
-         <section class="sectionOne py-5">
+         <section class="seccion-color py-5">
             <div class="container">
                <div class="row">
-                  <div class="col-4 my-2 separador"></div>
-                  <div class="col-4 text-center">
-                     <h3 class="text-white"><strong>¿Qué hacemos?</strong></h3>
+                  <div class="col-3 col-md-4 my-2">
+                     <div class="separador"></div>
                   </div>
-                  <div class="col-4 my-2 separador"></div>
+                  <div class="col-6 col-md-4 text-center">
+                     <h3 class="text-white titulo"><strong>¿Qué hacemos?</strong></h3>
+                  </div>
+                  <div class="col-3 col-md-4 my-2">
+                     <div class="separador"></div>
+                  </div>
                <div/>
             </div>
             <!-- Contenedor de servicios -->
             <div class="container text-white text-center">
                <div class="row">
-                  <div class="col-4">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                      <h2 class="py-3">Servicio Técnico</h2>
                      <div class="container">
                         <img class="rounded" src="img/index.png">
                         <p class="py-3 text-justify">Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Laudantium, ab voluptas, minus debitis itaque quos dignissimos laborum harum tempore quae, libero! Minus error, similique architecto enim saepe, atque veniam quaerat.</p>
                      </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                      <h2 class="py-3">Programación</h2>
                      <div class="container">
                         <img class="rounded" src="img/index.png">
                         <p class="py-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fuga eos nihil. Earum repellendus inventore velit, veniam autem esse temporibus, ad. Voluptatem temporibus ducimus alias dolore quisquam odio laboriosam. Mollitia?</p>
                      </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
                      <h2 class="py-3">Diseño Web</h2>
                      <div class="container"> 
                         <img class="rounded" src="img/index.png">
@@ -116,21 +113,45 @@
             <!-- Fin de servicios -->
          </section>
          <!-- Fin del primer section -->
-         <section>
-            <h5>Section 2</h5>
+         <!-- Segundo Section -->
+         <section class="container py-5">
+            <h2 class="text-center mt-3"><strong>LO NECESARIO A TU ALCANCE</strong></h2>
+            <div class="container">
+               <div class="row">
+                  <div class="col-5"></div>
+                  <div class="col-2">
+                     <hr class="h-divisor">
+                  </div>
+                  <div class="col-5"></div>
+               </div>
+            </div>
+            <p class=" text-center font-weight-bold px-5 my-4">Creamos programas simples, complejos y atractivos con todo lo que necesites o puedas necesitar, diseñamos páginas web a gusto total del consumidor; sea minimalista, formal o algo totalmente innovador, nos encargamos de reparar, administrar y hacer mantenimiento a equipos de cómputo en el ámbito de hardware o software.</p>
+            <div class="container text-center">
+               <div class="row">
+                  <div class="col-sm-3 col-md-4 col-xl-4"></div>
+                  <div class="col-sm-6 col-md-4 col-xl-4">
+                     <button type="button" class="btn boton-contacto font-weight-bold px-5 py-3 text-white">Contáctanos</button>
+                  </div>
+                  <div class="col-sm-3 col-md-4 col-xl-4"></div>
+               </div>
+            </div>    
          </section>
+         <!-- Fin de segundo section -->
+         <section class="seccion-color">
+            <h1 class="text-center text-white">Sección numero 3</h1>
+         </section>
+         <!-- Fin del segundo Section -->
       </main>
 
 
-
       <!-- JQuery -->
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <!-- Bootstrap tooltips -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
       <!-- Bootstrap core JavaScript -->
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
       <!-- MDB core JavaScript -->
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
    </body>
 </html>

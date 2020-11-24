@@ -29,7 +29,7 @@ body {
 	background-color: beige !important;
 }
 
-.sectionOne {
+.seccion-color {
 	background-color: #343AC7;
 }
 
@@ -38,8 +38,17 @@ body {
   border-radius: 5px;
 }
 
-.separador-v {
-	border-left:2px solid #B80CA0; 
-	height:80px;
-	top:10px; 
+
+.boton-contacto {
+	border-radius: 30px !important;
+	background-color: #343AC7 !important;
+}
+
+.h-divisor {
+	border-width: 0.40rem;
+/*	max-width: 2.25rem;
+*/	border-color: #B80CA0;
+}
+
+@media (min-width: 1px) and (max-width: 575px){
 }

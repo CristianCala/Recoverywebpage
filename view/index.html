@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Estilos propios -->
       <link rel="stylesheet" href="styles.css">
-      <!-- Font Awesome -->
+      <!-- Font Awesome (iconos) -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-      <!-- Google Fonts -->
+      <!-- Google Fonts (Fuentes de google) -->
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
       <!-- Bootstrap core CSS -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 
    <body>
       <header>
-         <!-- Inicio de la navegación -->
+         <!-- Inicio de la barra de navegación -->
          <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
             <div class="container">
                <a class="navbar-brand font-weight-bold" href="#">
@@ -48,8 +48,7 @@
                </div>
             </div>
          </nav>
-         <!-- Fin de la navegación -->
-         <br>
+         <!-- Fin de la barra de navegación -->
          <br>
          <br>
          <br>
@@ -57,14 +56,15 @@
          <!-- Encabezado -->
          <div class="container pt-4">
             <div class="row"></div>
-            <div class="col-md-4 col-sm">
-               <h1><strong>Servicio Técnico <br>&<br>Programación</strong></h1>
-               <div class="py-4 text-white"><h5><strong>"Siempre haciendo de lo <br>dicífil algo mucho más fácil."</strong></h5></div>
+            <div class="col-md-5 col-sm">
+               <h1 class="display-4 font-weight-bold"><strong>Servicio Técnico <br>&<br>Programación</strong></h1>
+               <div class="py-4 text-white"><h4><strong>"Siempre haciendo de lo <br>dicífil algo mucho más fácil."</strong></h4></div>
             </div>
          </div>
          <!-- Fin de encabezado -->
       </header>
 
+      <!-- Inicio de main con sus respectivos sections -->
       <main>
          <br>
          <br>
@@ -77,7 +77,7 @@
                      <div class="separador"></div>
                   </div>
                   <div class="col-6 col-md-4 text-center">
-                     <h3 class="text-white titulo"><strong>¿Qué hacemos?</strong></h3>
+                     <h3 class="text-white titulo"><strong>¿QUÉ HACEMOS?</strong></h3>
                   </div>
                   <div class="col-3 col-md-4 my-2">
                      <div class="separador"></div>
@@ -113,9 +113,43 @@
             <!-- Fin de servicios -->
          </section>
          <!-- Fin del primer section -->
-         <!-- Segundo Section -->
-         <section class="container py-5">
-            <h2 class="text-center mt-3"><strong>LO NECESARIO A TU ALCANCE</strong></h2>
+
+         <!-- Segundo Section (Sobre Nosotros) -->
+         <section class="position-relative">
+            <div class="container py-5">
+               <div class="container">
+                  <img src="img/esquina1.png" class="esquinero1 position-absolute" alt="">
+               </div>
+               <h2 class="text-center mt-3 position-relative zeta"><strong>LO NECESARIO A TU ALCANCE</strong></h2>
+               <div class="container">
+                  <div class="row">
+                     <div class="col-5"></div>
+                     <div class="col-2">
+                        <hr class="h-divisor">
+                     </div>
+                     <div class="col-5"></div>
+                  </div>
+               </div>
+               <p class=" text-center font-weight-bold px-5 my-4">Creamos programas simples, complejos y atractivos con todo lo que necesites o puedas necesitar, diseñamos páginas web a gusto total del consumidor; sea minimalista, formal o algo totalmente innovador, nos encargamos de reparar, administrar y hacer mantenimiento a equipos de cómputo en el ámbito de hardware o software.</p>
+               <div class="container text-center">
+                  <div class="row">
+                     <div class="col-sm-3 col-md-4 col-xl-4"></div>
+                     <div class="col-sm-6 col-md-4 col-xl-4">
+                        <button type="button" class="btn boton-contacto font-weight-bold px-5 py-3 text-white zeta">Contáctanos</button>
+                     </div>
+                     <div class="col-sm-3 col-md-4 col-xl-4"></div>
+                  </div>
+               </div>
+               <div class="container">
+                  <img src="img/esquina2.png" class="esquinero2 position-absolute" alt="">
+               </div>
+            </div>
+         </section>
+         <!-- Fin de segundo section  (segundo section)-->
+
+         <!-- Tercer section (Trabajos) -->
+         <section class="seccion-color py-5">
+            <h2 class="text-center text-white font-weight-bold">NUESTROS PROYECTOS</h2>
             <div class="container">
                <div class="row">
                   <div class="col-5"></div>
@@ -125,25 +159,10 @@
                   <div class="col-5"></div>
                </div>
             </div>
-            <p class=" text-center font-weight-bold px-5 my-4">Creamos programas simples, complejos y atractivos con todo lo que necesites o puedas necesitar, diseñamos páginas web a gusto total del consumidor; sea minimalista, formal o algo totalmente innovador, nos encargamos de reparar, administrar y hacer mantenimiento a equipos de cómputo en el ámbito de hardware o software.</p>
-            <div class="container text-center">
-               <div class="row">
-                  <div class="col-sm-3 col-md-4 col-xl-4"></div>
-                  <div class="col-sm-6 col-md-4 col-xl-4">
-                     <button type="button" class="btn boton-contacto font-weight-bold px-5 py-3 text-white">Contáctanos</button>
-                  </div>
-                  <div class="col-sm-3 col-md-4 col-xl-4"></div>
-               </div>
-            </div>    
          </section>
-         <!-- Fin de segundo section -->
-         <section class="seccion-color">
-            <h1 class="text-center text-white">Sección numero 3</h1>
-         </section>
-         <!-- Fin del segundo Section -->
+         <!-- Fin del tercer section (Trabajos) -->
       </main>
-
-
+      <!-- Fin de main con sus respectivos section -->
       <!-- JQuery -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <!-- Bootstrap tooltips -->

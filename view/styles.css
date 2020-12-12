@@ -21,6 +21,9 @@ header {
 	/*background-color: black;*/
 }
 
+a:hover {
+	color: #B80CA0 !important;
+}
 /*color beige de fondo de la página entera*/
 body {
 	/*background-color: #141B2E !important;*/

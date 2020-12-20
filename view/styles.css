@@ -20,8 +20,29 @@ header {
 	text-align: center;
 }
 
-/*animaciones del header*/
-@keyframes mover{
+/*animaciones generales*/
+/*abajo a arriba*/
+@keyframes moverarriba{
+	0%{
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+/*arriba a abajo*/
+@keyframes moverabajo{
+	0%{
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+/*derecha a izquierda*/
+@keyframes moverderecho{
 	0%{
 		transform: translate(100%);
 		opacity: 0;
@@ -30,10 +51,10 @@ header {
 		opacity: 1;
 	}
 }
-
-@keyframes mover2{
+/*izquierda a derecha*/
+@keyframes moverizquierda{
 	0%{
-		transform: translateY(100%);
+		transform: translate(-100%);
 		opacity: 0;
 	}
 	100%{
@@ -100,7 +121,7 @@ body {
 
 /*z-index para todo uso*/
 .zeta {
-	z-index: 2 !important;
+	z-index: 10 !important;
 }
 
 /*configuración de fondo de footer*/

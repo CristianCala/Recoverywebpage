@@ -4,6 +4,7 @@
 	box-sizing: border-box; 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	font-family: Roboto !important;
 }
 
 /*configuracion de imagen de fondo del header*/
@@ -11,14 +12,33 @@ header {
 	width: 100%;
 	height: 950px;
 	background-image: url(img/header.png);
-	/*background-attachment: fixed;*/
 	background-position: center;
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
 	color:#FFFFFFFF;
 	text-align: center;
-	/*background-color: black;*/
+}
+
+/*animaciones del header*/
+@keyframes mover{
+	0%{
+		transform: translate(100%);
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes mover2{
+	0%{
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 a:hover {
@@ -94,3 +114,14 @@ footer {
 	overflow: hidden;
 	text-align: center;
 }
+
+/*animacion de opacidad del logo del footer*/
+@keyframes logo{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+

@@ -19,6 +19,21 @@ header {
 	text-align: center;
 }
 
+/*animacion de zoom*/
+.zoom {
+	transition: 1.5s ease;
+	-moz-transition: 1.5s ease;
+	-webkit-transition: 1.5s ease;
+	-o-transition: 1.5s ease;
+}
+.zoom:hover {
+	transform : scale(1.1);
+	-moz-transform : scale(1.1);
+	-webkit-transform : scale(1.1); 
+	-o-transform : scale(1.1); 
+	-ms-transform : scale(1.1); 
+}
+
 /*animaciones generales*/
 /*abajo a arriba*/
 @keyframes moverarriba{
@@ -113,10 +128,18 @@ body {
 	overflow: hidden;
 }
 
-/*media query para futuro posible uso :V */
-/*@media (min-width: 1px) and (max-width: 376px){
+.corte-seccion {
+	clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+}
 
-}*/
+
+/*media query del corte de contactanos */
+@media (min-width: 1px) and (max-width: 770px){
+
+.corte-seccion {
+	clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+}
+}
 
 /*z-index para todo uso*/
 .zeta {

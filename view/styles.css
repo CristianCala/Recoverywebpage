@@ -157,12 +157,23 @@ body {
 	overflow: hidden;
 }
 
+/*cortes de sections contactos*/
 .corte-seccion {
 	clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
 }
 
 .corte-seccion2 {
 	clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+}
+
+/*imagen de fondo de section contactos*/
+.imagen-contacto {
+	background-image: url(img/Fondo.jpg);
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
 }
 
 /*media query del corte de contactanos */

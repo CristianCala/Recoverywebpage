@@ -51,7 +51,6 @@ window.addEventListener('scroll', function(){
 
 })
 
-
 window.addEventListener('scroll', function(){
 
 	let animaciondere = document.getElementById('contenedordere')
@@ -62,5 +61,18 @@ window.addEventListener('scroll', function(){
 
 	if (posicionObject < tamañoPantalla){
 		animaciondere.style.animation = 'moverderecho 1s ease-out';
+	}
+})
+
+window.addEventListener('scroll', function(){
+
+	let animacioniz = document.getElementById('contenedoriz')
+
+	let posicionObject = animacioniz.getBoundingClientRect().top;
+
+	let tamañoPantalla = window.innerHeight;
+
+	if (posicionObject < tamañoPantalla){
+		animacioniz.style.animation = 'moverizquierda 1s ease-out';
 	}
 })

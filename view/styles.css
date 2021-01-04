@@ -19,6 +19,35 @@ header {
 	text-align: center;
 }
 
+/*estilos de la scrollbar*/
+/* Tamaño del scroll */
+html::-webkit-scrollbar {
+  width: 15px;
+}
+
+ /* Estilos barra (thumb) de scroll */
+html::-webkit-scrollbar-thumb {
+  background: #343AC7;
+  border-radius: 8px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #B80CA0;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* Estilos track de scroll */
+html::-webkit-scrollbar-track {
+  background: beige;
+  border-radius: 8px;
+}
+
+html::-webkit-scrollbar-track:hover, 
+html::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+
 /*animacion de zoom*/
 .zoom {
 	transition: 1.5s ease;
@@ -132,12 +161,18 @@ body {
 	clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
 }
 
+.corte-seccion2 {
+	clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+}
 
 /*media query del corte de contactanos */
 @media (min-width: 1px) and (max-width: 770px){
 
 .corte-seccion {
 	clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+}
+.corte-seccion2 {
+	clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 }
 }
 
@@ -167,4 +202,3 @@ footer {
 		opacity: 1;
 	}
 }
-

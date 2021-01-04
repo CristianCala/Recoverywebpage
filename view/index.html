@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
    <head>
@@ -77,13 +75,13 @@
             <div class="container">
                <div class="row">
                   <div class="col-3 col-md-4 my-2">
-                     <div class="separador " id="animacionizquierda"></div>
+                     <div class="separador " ></div>
                   </div>
                   <div class="col-6 col-md-4 text-center">
-                     <h3 class="text-white titulo" ><strong>¿QUÉ HACEMOS?</strong></h3>
+                     <h3 class="text-white titulo"><strong>¿QUÉ HACEMOS?</strong></h3>
                   </div>
                   <div class="col-3 col-md-4 my-2">
-                     <div class="separador" id="animacionderecha"></div>
+                     <div class="separador" ></div>
                   </div>
                </div>
             </div>
@@ -92,21 +90,21 @@
             <div class="servicios"></div>
             <div class="container text-white text-center z-depth-3">
                <div class="row">
-                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 zoom">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 zoom" id="animacionizquierda" >
                      <h2 class="py-3">Servicio Técnico</h2>
                      <div class="container">
                         <img class="rounded z-depth-3" src="img/index.png"  alt="img1">
                         <p class="py-3 text-justify font-italic">Gracias a nuestro experimentado equipo de técnicos e ingenieros, así como nuestra capacidad multimarca, multiproducto y multimagnitud, nos encargamos de gestionar el mantenimiento, las reparaciones y la obsolescencia de los equipos.</p>
                      </div>
                   </div>
-                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 zoom">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 zoom" id="animacionarriba">
                      <h2 class="py-3 ">Programación</h2>
                      <div class="container">
                         <img class="rounded z-depth-3" src="img/index.png" alt="img2">
                         <p class="py-3 text-justify font-italic">A partir de los problemas reales que tienen nuestros clientes, realizamos aplicaciones a la medida de tus necesidades en cualquier plataforma, combinando versión móvil, web o escritorio.</p>
                      </div>
                   </div>
-                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 zoom">
+                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 zoom" id="animacionderecha">
                      <h2 class="py-3">Consultoría</h2>
                      <div class="container">
                         <img class="rounded z-depth-3" src="img/index.png" alt="img3">
@@ -121,7 +119,7 @@
          <!-- Segundo Section (Sobre Nosotros) -->
          <!-- se agrego ancla para enlace con la barra de navegacion -->
          <div class="sobrenosotros"></div>
-         <section class="position-relative z-depth-3">
+         <section class="position-relative z-depth-3 zoom">
             <div class="container py-5">
                <div class="container">
                   <img src="img/esquina1.png" class="esquinero1 position-absolute" alt="img4">
@@ -141,7 +139,7 @@
                   <div class="row">
                      <div class="col-sm-3 col-md-4 col-xl-4"></div>
                      <div class="col-sm-6 col-md-4 col-xl-4">
-                        <button type="button" class="btn boton-contacto font-weight-bold px-5 py-3 text-white zeta">¡Escribenos!</button>
+                        <a class="btn boton-contacto font-weight-bold px-5 py-3 text-white zeta" href="contact-us.html">¡Escribenos Ya!</a>
                      </div>
                      <div class="col-sm-3 col-md-4 col-xl-4"></div>
                   </div>
@@ -154,7 +152,7 @@
          <!-- Fin de segundo section  (segundo section)-->
          <!-- Tercer section (Trabajos) -->
          <div class="programas"></div>
-         <section class="seccion-color py-5 z-depth-3">
+         <section class="seccion-color py-5 z-depth-3 zoom">
             <h2 class="text-center text-white font-weight-bold">NUESTROS PROYECTOS</h2>
             <div class="container">
                <div class="row">
@@ -168,6 +166,30 @@
             <p class="text-center font-weight-bold text-white py-5">Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Odio incidunt, voluptate. Omnis perspiciatis consectetur quam commodi asperiores, quaerat nostrum illum officiis cumque fugiat optio non nulla corporis dolore modi sint!</p>
          </section>
          <!-- Fin del tercer section (Trabajos) -->
+         <div class="py-3"></div>
+         <section>
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-sm-12 col-md-6 col-xl-6 py-5 seccion-color corte-seccion2">
+                     <h2 class="text-center text-white font-weight-bold">LOGO Y FONDO</h2>
+                  </div>
+                  <div class="text-center col-sm-12 col-md-6 col-xl-6">
+                     <div class="container-fluid py-5">
+                        <h2 class="font-weight-bold">ESCRIBENOS</h2>
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-5"></div>
+                              <div class="col-2">
+                                 <hr class="h-divisor">
+                              </div>
+                              <div class="col-5"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
          <!-- Cuarto Section (Contáctanos) -->
          <div class="contactanos"></div>
          <div class="py-3"></div>
@@ -192,7 +214,7 @@
                         <h3><i class="fab fa-whatsapp fa-lg" style="color: #B80CA0;"></i> Recoveryloid</h3>
                      </div>
                   </div>
-                  <div class="text-center col-sm-12 col-md-6 col-xl-6 seccion-color corte-seccion">
+                  <div class="text-center col-sm-12 col-md-6 col-xl-6 seccion-color corte-seccion" id="contenedordere">
                      <div class="container-fluid py-5">
                         <h4 class="text-white font-weight-bold">CUENTE CON NOSOTROS</h4>
                         <iframe src="https://giphy.com/embed/Y1NHfD0YVAzsziLdd0" width="350" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
@@ -201,6 +223,7 @@
                </div>
             </div>
          </section>
+         <!-- Fin de section de contactanos -->
       </main>
       <!-- Fin de main con sus respectivos section -->
       <!-- Inicio del footer -->

@@ -11,7 +11,7 @@
 header {
 	width: 100%;
 	height: 1000px;
-	background-image: url(img/header.png);
+	background-image: url(../img/header.png);
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
@@ -168,7 +168,7 @@ body {
 
 /*imagen de fondo de section contactos*/
 .imagen-contacto {
-	background-image: url(img/Fondo.jpg);
+	background-image: url(../img/Fondo.jpg);
 	width: 100%;
 	height: 500px;
 	background-size: cover;
@@ -196,7 +196,7 @@ body {
 footer {
 	width: 100%;
 	height: 950px;
-	background-image: url(img/footerimg.png);
+	background-image: url(../img/footerimg.png);
 	background-position: center;
 	background-size: cover;
 	position: relative;

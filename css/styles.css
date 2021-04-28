@@ -7,7 +7,13 @@
 	font-family: Roboto !important;
 }
 
-/*configuracion de imagen de fondo del header*/
+/*Paleta de colores*/
+:root{
+	--main-color:#343AC7;
+	--oscuro-color: #1C2313; /* Moradito*/
+	--claro-color: #B80CA0; /* Purpura*/
+} 
+
 header {
 	width: 100%;
 	height: 1000px;
@@ -19,13 +25,19 @@ header {
 	text-align: center;
 }
 
+.decoracion-text{
+    text-decoration: none;
+}
+
+.fondo-texto{
+	background-color: var(--claro-color) ;
+}
+
 /*estilos de la scrollbar*/
-/* Tamaño del scroll */
 html::-webkit-scrollbar {
   width: 15px;
 }
 
- /* Estilos barra (thumb) de scroll */
 html::-webkit-scrollbar-thumb {
   background: #343AC7;
   border-radius: 8px;
@@ -36,7 +48,6 @@ html::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
- /* Estilos track de scroll */
 html::-webkit-scrollbar-track {
   background: beige;
   border-radius: 8px;

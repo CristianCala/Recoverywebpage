@@ -21,8 +21,7 @@ window.addEventListener('scroll', function(){
 	let posicionObject3 = animacionarriba.getBoundingClientRect().top;
 
 
-	let tamañoPantalla = window.innerHeight;
-
+	let tamañoPantalla = window.innerHeight/3;
 	if (posicionObject < tamañoPantalla){
 		animacionderecha.style.animation = 'moverderecho 1s ease-out';
 	}
@@ -57,7 +56,7 @@ window.addEventListener('scroll', function(){
 
 	let posicionObject = animaciondere.getBoundingClientRect().top;
 
-	let tamañoPantalla = window.innerHeight;
+	let tamañoPantalla = window.innerHeight/3;
 
 	if (posicionObject < tamañoPantalla){
 		animaciondere.style.animation = 'moverderecho 1s ease-out';
@@ -70,7 +69,7 @@ window.addEventListener('scroll', function(){
 
 	let posicionObject = animacioniz.getBoundingClientRect().top;
 
-	let tamañoPantalla = window.innerHeight;
+	let tamañoPantalla = window.innerHeight/3;
 
 	if (posicionObject < tamañoPantalla){
 		animacioniz.style.animation = 'moverizquierda 1s ease-out';

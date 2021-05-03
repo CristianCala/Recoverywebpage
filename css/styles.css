@@ -12,6 +12,7 @@
 	--main-color:#343AC7;
 	--oscuro-color: #1C2313; /* Moradito*/
 	--claro-color: #B80CA0; /* Purpura*/
+	--claro-segundario: #0B85CB ;
 } 
 
 header {
@@ -23,6 +24,26 @@ header {
 	overflow: hidden;
 	color:#FFFFFFFF;
 	text-align: center;
+}
+
+.animacion-border{
+    position: relative;
+}
+
+.animacion-border:after{
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid white;
+    bottom: 0;
+    left: 40%;
+    right: 40%;
+    transition: all 500ms;
+}
+
+.animacion-border:hover:after{
+    right: 0;
+    left: 0;
+    border-bottom: 3px solid var(--claro-color);
 }
 
 .decoracion-text{
@@ -39,7 +60,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #343AC7;
+  background: var(--main-color);
   border-radius: 8px;
 }
 
@@ -49,7 +70,6 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 html::-webkit-scrollbar-track {
-  background: beige;
   border-radius: 8px;
 }
 
@@ -58,8 +78,6 @@ html::-webkit-scrollbar-track:active {
   background: #d4d4d4;
 }
 
-
-/*animacion de zoom*/
 .zoom {
 	transition: 1.5s ease;
 	-moz-transition: 1.5s ease;
@@ -119,11 +137,7 @@ html::-webkit-scrollbar-track:active {
 a:hover {
 	color: #B80CA0 !important;
 }
-/*color beige de fondo de la página entera*/
-body {
-	/*background-color: #141B2E !important;*/
-	background-color: beige !important;
-}
+
 
 /*color morado de los section*/
 .seccion-color {
@@ -132,20 +146,33 @@ body {
 
 /*separador de section (qué hacemos)*/
 .separador {
-  border-top: 8px solid #B80CA0;
+  border-top: 8px solid var(--claro-color);
   border-radius: 5px;
 }
 
-/*redondeo de boton y color de boton*/
-.boton-contacto {
-	border-radius: 30px !important;
-	background-color: #343AC7 !important;
+.hr-mejorado{
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 90px;
+	border-top-width: 0.40rem !important;
+	background-color: var(--claro-color);
+	border-radius: 5px;
 }
 
-/*separador fuccia de los titulos*/
-.h-divisor {
-	border-width: 0.40rem;
-	border-color: #B80CA0;
+.boton-standar {
+	border-radius: 30px !important;
+	background-color: var(--main-color) !important;
+	border: 0.2rem solid transparent !important;
+}
+
+.boton-standar:hover{
+	background-color: transparent !important;
+	border: 0.2rem solid var(--main-color) !important;
+	color: var(--main-color) !important;
+}
+
+.boton-standar:focus{
+	box-shadow: none !important;
 }
 
 /*esquinero de esquina izquierda*/
@@ -223,4 +250,18 @@ footer {
 	100%{
 		opacity: 1;
 	}
+}
+
+.form-control{
+	box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+	border: 0px !important;
+	border-radius: 24px !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem var(--claro-color) !important;
+}
+
+.lenguajes{
+	color: #BBBAC2;
 }
